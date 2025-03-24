@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="static/css/1/global.css" />
+    <link rel="stylesheet" href="static/css/1/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+    />
+
+   <script src="static/js/xray.js"></script>
+
+  </head>
+  <body>
+    <div class="index1">
+
+<div class="xrayboard">
+  <div class="analysis-image">Analysis Image</div>
+  <div class="board" id="previewBox">
+    <img id="previewImage" src="" >
+  </div>
+</div>
+
+    <div class="button-container">
+     <button id="normalButton" class="custom-button" onclick="applyFilters()">NORMAL</button> 
+     <button id="inverseButton" class="custom-button" onclick="resetImage()">INVERSE</button>
+    </div>
+
+<form action="/predict" method="post" enctype="multipart/form-data">
+  <div class="upload">
+    <label for="xray-upload" class="custom-upload-button">
+      UPLOAD
+    </label>
+    <input type="file" id="xray-upload" name="image" accept=".jpg, .jpeg, .png" onchange="previewImage()" />
+  </div>
+  <div class="submit">
+    <button type="submit" class="submit-button" value="Predict">SUBMIT</button>
+  </div>
+</form>
+
+      <h1 class="headline">
+        <span class="headline-txt">
+          <p class="tuberculosis">Tuberculosis</p>
+          <p class="tuberculosis">
+            <span>Detection </span>
+            <span class="ai"></span>
+          </p>
+        </span>
+      </h1>
+      <div class="this-ai-analysis-container">
+        <p class="this-ai-analysis">
+          
+        </p>
+        <p class="tuberculosis">
+          
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
