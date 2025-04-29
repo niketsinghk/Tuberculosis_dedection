@@ -76,15 +76,13 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Author
 
-- Niket (AI Enthusiast, DevOps Engineer, Web Developer)
+- Niket (AI Enthusiast, Web Developer,Machine learning)
 
 ## Contributors
 
 - Dr. Karuna sharma (Professor at ACETI, JAIPUR)
 
-## Contact
 
-For questions or inquiries, please contact at its.ravi@outlook.com.
 ```
 
 I've added the author and contributors' information to the README.md. Make sure to replace `<repository-url>` with your actual repository URL and adjust any other details as needed. Your README is now well-documented with the necessary project information.
